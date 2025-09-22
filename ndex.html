@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notifications</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ===== Topbar ===== -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <!-- Brand -->
+      <div class="brand">
+        <div class="brand-icon">
+          <!-- simple logo -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M7 12l3 3 7-7" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <span class="brand-name">Furqan LMS</span>
+      </div>
+
+      <!-- Center nav pills -->
+      <nav class="tabbar" aria-label="Primary">
+        <button class="tab">
+          <span class="tab-ico">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 12h18M3 6h18M3 18h18" />
+            </svg>
+          </span>
+          <span>Dashboard</span>
+        </button>
+
+        <button class="tab">
+          <span class="tab-ico">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 4h16v6H4zM4 14h10v6H4z" />
+            </svg>
+          </span>
+          <span>Education</span>
+          <svg class="caret" viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        <button class="tab">
+          <span class="tab-ico">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 7h18M3 12h18M3 17h18" />
+            </svg>
+          </span>
+          <span>Packages</span>
+        </button>
+
+        <button class="tab">
+          <span class="tab-ico">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 4h12v16H6zM9 4v16" />
+            </svg>
+          </span>
+          <span>Books</span>
+        </button>
+
+        <button class="tab">
+          <span class="tab-ico">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 6h16v4H4zM4 14h10v4H4z" />
+            </svg>
+          </span>
+          <span>Requests</span>
+        </button>
+
+        <button class="tab">
+          <span class="tab-ico">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 12a5 5 0 100-10 5 5 0 000 10zM2 22a10 10 0 0120 0" />
+            </svg>
+          </span>
+          <span>Users</span>
+          <svg class="caret" viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Right actions -->
+      <div class="actions">
+        <!-- Search icon (in topbar, left of notifications) -->
+        <button class="icon-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M20 20l-3.5-3.5" />
+          </svg>
+        </button>
+
+        <!-- Notifications primary pill -->
+        <button class="pill-btn primary">
+          <svg class="bell" viewBox="0 0 24 24">
+            <path d="M15 17h5l-1.4-1.4A2 2 0 0118 14v-3a6 6 0 10-12 0v3a2 2 0 01-.6 1.4L4 17h5" />
+            <path d="M9 21a3 3 0 006 0" />
+          </svg>
+          <span>Notifications</span>
+        </button>
+
+        <!-- Country pill -->
+        <button class="pill-btn light country">
+          <img src="https://flagcdn.com/w20/pk.png" alt="Pakistan" />
+          <span>PK</span>
+          <svg class="caret" viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        <!-- Avatar -->
+        <div class="avatar" aria-label="User"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="page">
+    <!-- Page Title Row -->
+    <div class="page-header">
+      <h1 class="page-title">Notifications</h1>
+      <button class="mark-read">Mark all as read</button>
+    </div>
+
+
+    <!-- Main White Container -->
+    <div class="notifications-wrapper">
+      <!-- Search & Filter row inside page -->
+      <div class="bar">
+        <div class="search-input">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M20 20l-3.5-3.5" />
+          </svg>
+          <input type="text" placeholder="Type here to search" />
+        </div>
+        <div class="bar-right">
+          <!-- <button class="chip">Mark all as read</button> -->
+          <button class="chip">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 6h16M7 12h10M9 18h6" />
+            </svg>
+            <span>Filter</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Today -->
+      <section class="section">
+        <div class="section-label">Today</div>
+
+        <article class="note">
+          <div class="badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6z" />
+            </svg>
+          </div>
+          <div class="note-body">
+            <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ed do eiusmod tempor incididunt. sit amet,
+              consectetur.</p>
+          </div>
+          <time>2h ago</time>
+        </article>
+
+        <article class="note active">
+          <div class="badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6z" />
+            </svg>
+          </div>
+          <div class="note-body">
+            <h3><span class="dot"></span> Lorem ipsum dolor sit amet, consectetur.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ed do eiusmod tempor incididunt. sit amet,
+              consectetur.</p>
+          </div>
+          <time>2h ago</time>
+        </article>
+
+        <article class="note">
+          <div class="badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6z" />
+            </svg>
+          </div>
+          <div class="note-body">
+            <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ed do eiusmod tempor incididunt. sit amet,
+              consectetur.</p>
+          </div>
+          <time>2h ago</time>
+        </article>
+      </section>
+
+      <!-- Yesterday -->
+      <section class="section">
+        <div class="section-label">Yesterday</div>
+
+        <article class="note">
+          <div class="badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6z" />
+            </svg>
+          </div>
+          <div class="note-body">
+            <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ed do eiusmod tempor incididunt. sit amet,
+              consectetur.</p>
+          </div>
+          <time>2h ago</time>
+        </article>
+
+        <article class="note">
+          <div class="badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6z" />
+            </svg>
+          </div>
+          <div class="note-body">
+            <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ed do eiusmod tempor incididunt. sit amet,
+              consectetur.</p>
+          </div>
+          <time>2h ago</time>
+        </article>
+
+        <article class="note active">
+          <div class="badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6z" />
+            </svg>
+          </div>
+          <div class="note-body">
+            <h3><span class="dot"></span> Lorem ipsum dolor sit amet, consectetur.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ed do eiusmod tempor incididunt. sit amet,
+              consectetur.</p>
+          </div>
+          <time>2h ago</time>
+        </article>
+      </section>
+
+
+    </div>
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+      <!-- Center Block -->
+      <div class="center-block">
+        <!-- Pagination -->
+        <div class="pager">
+          <button aria-label="Prev">&lt;</button>
+          <button class="is-active">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button aria-label="Next">&gt;</button>
+        </div>
+
+        <!-- Showing Page Info -->
+        <div class="page-info muted">Showing page 1 of 20</div>
+      </div>
+
+      <!-- Right Block -->
+      <div class="right-block">
+        <div class="muted total">Total Notifications: 300</div>
+        <div class="per-page">
+          <span>Notifications per page</span>
+          <div class="counter">6</div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+</body>
+
+</html>
